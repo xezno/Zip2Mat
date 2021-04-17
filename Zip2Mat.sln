@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zip2Mat", "Zip2Mat\Zip2Mat.csproj", "{2C4FFA25-7785-4B00-B3C5-08AE5512C98C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zip2Mat.GUI", "Zip2Mat.GUI\Zip2Mat.GUI.csproj", "{1F37F4A2-9572-47D8-86D6-9D2056C014A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C4FFA25-7785-4B00-B3C5-08AE5512C98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C4FFA25-7785-4B00-B3C5-08AE5512C98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C4FFA25-7785-4B00-B3C5-08AE5512C98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C4FFA25-7785-4B00-B3C5-08AE5512C98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F37F4A2-9572-47D8-86D6-9D2056C014A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F37F4A2-9572-47D8-86D6-9D2056C014A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F37F4A2-9572-47D8-86D6-9D2056C014A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F37F4A2-9572-47D8-86D6-9D2056C014A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B5F61BB-893A-4B9F-B20F-3F890BB3FA3A}
+	EndGlobalSection
+EndGlobal
