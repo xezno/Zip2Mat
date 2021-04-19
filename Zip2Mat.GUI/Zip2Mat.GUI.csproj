@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
     <PackageReference Include="TgaSharp" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SboxMatGen\Zip2Mat.csproj" />
+    <ProjectReference Include="..\Zip2Mat\Zip2Mat.csproj" />
   </ItemGroup>
 
 </Project>

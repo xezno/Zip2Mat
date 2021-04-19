@@ -24,8 +24,8 @@ namespace Zip2Mat
                     property.SetValue(this, $"materials/{matName}/{val.name}");
 
                     // Copy material to HLA location
-                    Directory.CreateDirectory(Path.Combine(MainSettings.Default.MatLocation, matName));
-                    var destPath = Path.Combine(MainSettings.Default.MatLocation, matName, val.name);
+                    Directory.CreateDirectory(Path.Combine(MainSettings.Instance.MatLocation, matName));
+                    var destPath = Path.Combine(MainSettings.Instance.MatLocation, matName, val.name);
 
                     zipArchive.Entries.Where(t => t.Name == val.name).First().ExtractToFile(destPath, overwrite: true);
                 }
