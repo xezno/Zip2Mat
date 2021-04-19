@@ -23,6 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="MainSettings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MainSettings.settings</DependentUpon>
+    </Compile>
     <Compile Update="VrSimple.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -31,6 +36,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="MainSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MainSettings.Designer.cs</LastGenOutput>
+    </None>
     <None Update="VrSimple.tt">
       <Generator>TextTemplatingFilePreprocessor</Generator>
       <LastGenOutput>VrSimple.cs</LastGenOutput>
