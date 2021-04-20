@@ -10,17 +10,17 @@ materials at light speed.
 
 Zip2Mat currently features:
 
-- A super simple, intuitive interface
+- Automatically extracts & moves all of your files into the right place so that you don't have to
+- Bulk importing: drag & drop multiple zip files so that you can batch import textures
+- Converts textures into .tga images (Source 2 likes these more than jpegs or pngs or whatever)
 - Support for the 'VR Simple' shader
+- A super simple, intuitive interface
 - Tested & works with CC0Textures, TextureCan, TextureHaven, among others (most of the [3dassets.one](https://3dassets.one/)
 results should work without issue)
-- Automatically extracts & moves all of your files into the right place so that you don't have to
 
 In the near future, Zip2Mat will allow you to:
 
-- Convert textures into .tga images (Source 2 likes these more than jpegs or pngs or whatever)
 - Normalize file names (so that your project folder isnt a mess)
-- Drag & drop multiple zip files so that you can batch import textures
 
 ## Why?
 

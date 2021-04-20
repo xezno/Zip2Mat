@@ -19,15 +19,15 @@ namespace Zip2Mat
             Unknown
         };
 
-        // First alias entry is the 'normalized' one (i.e. the one that Source 2 looks for by default)
+        // Normalization is handled in TextureCollection.cs under the NormalizeAs attribute
         private static Dictionary<TextureType, string[]> textureNames = new Dictionary<TextureType, string[]>()
         {
-            { TextureType.Diffuse, new[] { "color" /* default */, "diffuse", "albedo", "col", "basecolor" } },
-            { TextureType.Normal, new[] { "normal" /* default */, "bump", "norm" } },
-            { TextureType.Metallic, new[] { "metal" /* default */, "metalness", "metallic" } },
-            { TextureType.Roughness, new[] { "rough" /* default */, "roughness", "rgh" } },
-            { TextureType.AmbientOcclusion, new[] { "ao" /* default */, "ambient", "ambientocclusion" } },
-            { TextureType.Height, new[] { "height" /* default */, "parallax", "displacement", "displace" } },
+            { TextureType.Diffuse, new[] { "color", "diffuse", "albedo", "col", "basecolor" } },
+            { TextureType.Normal, new[] { "normal", "bump", "norm" } },
+            { TextureType.Metallic, new[] { "metal", "metalness", "metallic" } },
+            { TextureType.Roughness, new[] { "rough", "roughness", "rgh" } },
+            { TextureType.AmbientOcclusion, new[] { "ao", "ambient", "ambientocclusion" } },
+            { TextureType.Height, new[] { "height", "parallax", "displacement", "displace" } },
         };
 
         public string name;

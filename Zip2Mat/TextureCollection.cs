@@ -9,11 +9,22 @@ namespace Zip2Mat
 {
     public class TextureCollection
     {
+        [NormalizeAs("color")]
         public string Diffuse { get; set; } = null;
+
+        [NormalizeAs("normal")]
         public string Normal { get; set; } = null;
+
+        [NormalizeAs("metal")]
         public string Metallic { get; set; } = null;
+
+        [NormalizeAs("rough")]
         public string Roughness { get; set; } = null;
+
+        [NormalizeAs("ao")]
         public string AmbientOcclusion { get; set; } = null;
+
+        [NormalizeAs("height")]
         public string Height { get; set; } = null;
 
 
@@ -26,11 +37,13 @@ namespace Zip2Mat
                     var destTextureFileName = val.name;
                     if (convertToTga)
                     {
-                        destTextureFileName = $"{Path.GetFileNameWithoutExtension(val.name)}.tga";
+                        destTextureFileName = $"{Path.GetFileNameWithoutExtension(destTextureFileName)}.tga";
                     }
                     if (normalizeFileNames)
                     {
-                        // TODO
+                        var normalizeAsAttribute = property.GetCustomAttributes(typeof(NormalizeAsAttribute), inherit: false).First() as NormalizeAsAttribute;
+
+                        destTextureFileName = $"{matName}_{normalizeAsAttribute.NormalizedType}{Path.GetExtension(destTextureFileName)}";
                     }
 
                     // Copy material to HLA location
