@@ -39,7 +39,7 @@ namespace Zip2Mat.GUI
                     if ((bool)fileNameDialog.ShowDialog())
                     {
                         matName = fileNameDialog.FileName;
-                        MatGen.Generate(file, matName);
+                        MatGen.Generate(file, matName, (bool)chkTga.IsChecked, (bool)chkNormalize.IsChecked);
                         MessageBox.Show($"Generated material {matName}");
                     }
                 }

@@ -20,7 +20,7 @@ namespace Zip2Mat
             }
 
             // Convert texture dict to texture collection
-            var textures = new TextureCollection(matName, textureDictionary, zipArchive);
+            var textures = new TextureCollection(matName, textureDictionary, zipArchive, convertToTga, normalizeFileNames);
 
             // Write to vmat
             var generatedMaterial = GenerateMaterial(textures);
