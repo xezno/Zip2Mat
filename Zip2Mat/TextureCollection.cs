@@ -46,6 +46,8 @@ namespace Zip2Mat
                         destTextureFileName = $"{matName}_{normalizeAsAttribute.NormalizedType}{Path.GetExtension(destTextureFileName)}";
                     }
 
+                    property.SetValue(this, $"materials/{matName}/{destTextureFileName}");
+
                     // Copy material to HLA location
                     Directory.CreateDirectory(Path.Combine(MainSettings.Instance.MatLocation, matName));
                     var destPath = Path.Combine(MainSettings.Instance.MatLocation, matName, destTextureFileName);
