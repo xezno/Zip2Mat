@@ -1,6 +1,6 @@
 # Zip2Mat
 
-![Zip2Mat Screenshot](https://user-images.githubusercontent.com/12881812/115127174-6a453f80-9fcc-11eb-8da5-7c99f23d184d.png)
+![Zip2Mat Screenshot](https://user-images.githubusercontent.com/12881812/115393441-9b468f80-a1d9-11eb-94cf-88bf91183fca.png)
 
 ## What?
 
