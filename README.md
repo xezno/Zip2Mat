@@ -17,9 +17,6 @@ Zip2Mat currently features:
 - A super simple, intuitive interface
 - Tested & works with CC0Textures, TextureCan, TextureHaven, among others (most of the [3dassets.one](https://3dassets.one/)
 results should work without issue)
-
-In the near future, Zip2Mat will allow you to:
-
 - Normalize file names (so that your project folder isnt a mess)
 
 ## Why?
