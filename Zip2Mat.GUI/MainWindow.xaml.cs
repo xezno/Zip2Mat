@@ -30,14 +30,19 @@ namespace Zip2Mat.GUI
             if (eventArgs.Data.GetDataPresent(DataFormats.FileDrop))
             {
                 string[] files = (string[])eventArgs.Data.GetData(DataFormats.FileDrop);
-                var matName = System.IO.Path.GetFileNameWithoutExtension(files[0]);
 
-                var fileNameDialog = new FileNameDialog(matName) { Owner = this };
-                if (fileNameDialog.ShowDialog() == true)
-                    matName = fileNameDialog.FileName;
+                foreach (string file in files)
+                {
+                    var matName = System.IO.Path.GetFileNameWithoutExtension(file);
+                    var fileNameDialog = new MaterialNameDialog(matName) { Owner = this };
 
-                MatGen.Generate(files[0], matName);
-                MessageBox.Show($"Generated material {matName}");
+                    if ((bool)fileNameDialog.ShowDialog())
+                    {
+                        matName = fileNameDialog.FileName;
+                        MatGen.Generate(file, matName);
+                        MessageBox.Show($"Generated material {matName}");
+                    }
+                }
             }
         }
     }

@@ -7,19 +7,15 @@ Layer0
 	shader "vr_simple.vfx"
 
 	<# if (textures.Metallic != null) { #>
-	
 	//---- Metalness ----
 	F_METALNESS_TEXTURE 1
 	TextureMetalness "<#= textures.Metallic #>"
-	
 	<# } #>
 	
 	<# if (textures.AmbientOcclusion != null) { #>
-
 	//---- Ambient Occlusion ----
 	F_AMBIENT_OCCLUSION_TEXTURE 1
 	TextureAmbientOcclusion "<#= textures.AmbientOcclusion #>"
-	
 	<# } #>
 
 	//---- Color ----

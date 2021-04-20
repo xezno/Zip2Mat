@@ -15,7 +15,7 @@ namespace Zip2Mat
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+    #line 1 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "16.0.0.0")]
     public partial class VrSimple : VrSimpleBase
     {
@@ -28,43 +28,43 @@ namespace Zip2Mat
             this.Write("\r\n// THIS FILE WAS GENERATED USING ZIP2MAT\r\n\r\nLayer0\r\n{\r\n\tshader \"vr_simple.vfx\"\r" +
                     "\n\r\n\t");
             
-            #line 9 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 9 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
  if (textures.Metallic != null) { 
             
             #line default
             #line hidden
-            this.Write("\t\r\n\t//---- Metalness ----\r\n\tF_METALNESS_TEXTURE 1\r\n\tTextureMetalness \"");
+            this.Write("\t//---- Metalness ----\r\n\tF_METALNESS_TEXTURE 1\r\n\tTextureMetalness \"");
             
-            #line 13 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 12 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(textures.Metallic));
             
             #line default
             #line hidden
-            this.Write("\"\r\n\t\r\n\t");
+            this.Write("\"\r\n\t");
             
-            #line 15 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 13 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
  } 
             
             #line default
             #line hidden
             this.Write("\t\r\n\t");
             
-            #line 17 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 15 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
  if (textures.AmbientOcclusion != null) { 
             
             #line default
             #line hidden
-            this.Write("\r\n\t//---- Ambient Occlusion ----\r\n\tF_AMBIENT_OCCLUSION_TEXTURE 1\r\n\tTextureAmbient" +
-                    "Occlusion \"");
+            this.Write("\t//---- Ambient Occlusion ----\r\n\tF_AMBIENT_OCCLUSION_TEXTURE 1\r\n\tTextureAmbientOc" +
+                    "clusion \"");
             
-            #line 21 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 18 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(textures.AmbientOcclusion));
             
             #line default
             #line hidden
-            this.Write("\"\r\n\t\r\n\t");
+            this.Write("\"\r\n\t");
             
-            #line 23 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 19 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
  } 
             
             #line default
@@ -72,21 +72,21 @@ namespace Zip2Mat
             this.Write("\r\n\t//---- Color ----\r\n\tg_flModelTintAmount \"1.000\"\r\n\tg_vColorTint \"[1.000000 1.00" +
                     "0000 1.000000 0.000000]\"\r\n\tTextureColor \"");
             
-            #line 28 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 24 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(textures.Diffuse ?? "[1.000000 1.000000 1.000000 0.000000]"));
             
             #line default
             #line hidden
             this.Write("\"\r\n\r\n\t//---- Normal ----\r\n\tTextureNormal \"");
             
-            #line 31 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 27 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(textures.Normal ?? "[1.000000 1.000000 1.000000 0.000000]"));
             
             #line default
             #line hidden
             this.Write("\"\r\n\r\n\t//---- Roughness ----\r\n\tTextureRoughness \"");
             
-            #line 34 "C:\Users\Alex\source\repos\SboxMatGen\SboxMatGen\VrSimple.tt"
+            #line 30 "C:\Users\Alex\source\repos\SboxMatGen\Zip2Mat\VrSimple.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(textures.Roughness ?? "[1.000000 1.000000 1.000000 0.000000]"));
             
             #line default

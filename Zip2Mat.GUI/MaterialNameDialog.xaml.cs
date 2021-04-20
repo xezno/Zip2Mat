@@ -13,9 +13,9 @@ using System.Windows.Shapes;
 namespace Zip2Mat.GUI
 {
     /// <summary>
-    /// Interaction logic for FileName.xaml
+    /// Interaction logic for MaterialNameDialog.xaml
     /// </summary>
-    public partial class FileNameDialog : Window
+    public partial class MaterialNameDialog : Window
 	{
 		private void btnDialogOk_Click(object sender, RoutedEventArgs e)
 		{
@@ -24,24 +24,24 @@ namespace Zip2Mat.GUI
 
 		private void Window_ContentRendered(object sender, EventArgs e)
 		{
-			txtFileName.SelectAll();
-			txtFileName.Focus();
+			txtMaterialName.SelectAll();
+			txtMaterialName.Focus();
 		}
 
 		public string FileName
 		{
-			get { return txtFileName.Text; }
+			get { return txtMaterialName.Text; }
 		}
 
-		public FileNameDialog(string fileName)
+		public MaterialNameDialog(string fileName)
 		{
 			InitializeComponent();
-			txtFileName.Text = fileName;
+			txtMaterialName.Text = fileName;
 		}
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
 		{
-			this.DialogResult = true;
+			this.DialogResult = false;
 		}
     }
 }

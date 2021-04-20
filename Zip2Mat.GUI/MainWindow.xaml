@@ -8,16 +8,16 @@
         mc:Ignorable="d"
         Title="Zip2Mat" Height="225" Width="325">
     <Grid>
-        <StackPanel Name="ImagePanel" Drop="StackPanel_Drop" AllowDrop="true" Margin="10,10,10,40">
+        <StackPanel Name="pnlDrop" Drop="StackPanel_Drop" AllowDrop="true" Margin="10,10,10,59">
             <Grid>
-                <Label VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,60,0,0">Drag ur zip here</Label>
+                <Label VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,60,0,0">Drag zip(s) here</Label>
             </Grid>
         </StackPanel>
-        <Grid Margin="0,150,150,0">
-            <CheckBox VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="True">Convert to TGA</CheckBox>
+        <Grid Margin="0,150,162,0">
+            <CheckBox Name="chkTga" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="True">Convert to TGA</CheckBox>
         </Grid>
-        <Grid Margin="150,150,0,0">
-            <CheckBox VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="True">Normalize names</CheckBox>
+        <Grid Margin="162,150,0,0">
+            <CheckBox Name="chkNormalize" VerticalAlignment="Center" HorizontalAlignment="Center" IsChecked="True">Normalize names</CheckBox>
         </Grid>
     </Grid>
 </Window>

@@ -23,7 +23,9 @@ namespace Zip2Mat
             var textures = new TextureCollection(matName, textureDictionary, zipArchive);
 
             // Write to vmat
-            File.WriteAllText(Path.Combine(MainSettings.Instance.MatLocation, $"{matName}.vmat"), GenerateMaterial(textures));
+            var generatedMaterial = GenerateMaterial(textures);
+            var filePath = Path.Combine(MainSettings.Instance.MatLocation, $"{matName}.vmat");
+            File.WriteAllText(filePath, generatedMaterial);
 
             zipArchive.Dispose();
         }
